@@ -1,5 +1,7 @@
 package LowLevelModules;
 
+import HighLevelModules.Burger;
+
 public class CheeseBurger extends Burger {
 
 	@Override

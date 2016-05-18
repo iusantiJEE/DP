@@ -1,7 +1,7 @@
-package LowLevelModules;
+package HighLevelModules;
 
-import HighLevelModules.Item;
-import HighLevelModules.Packing;
+import LowLevelModules.Solid;
+import LowLevelModules.Wrapper;
 
 public abstract class Burger implements Item{
 	
@@ -16,5 +16,10 @@ public abstract class Burger implements Item{
 
 	@Override
 	public abstract float price();
+	
+	@Override
+	public State state(){
+		return new Solid();
+	}
 
 }

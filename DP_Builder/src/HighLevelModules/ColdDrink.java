@@ -1,7 +1,7 @@
-package LowLevelModules;
+package HighLevelModules;
 
-import HighLevelModules.Item;
-import HighLevelModules.Packing;
+import LowLevelModules.Bottle;
+import LowLevelModules.Liquid;
 
 public abstract class ColdDrink implements Item {
 	//delegates the method to the next object in the inheritance chain
@@ -17,5 +17,10 @@ public abstract class ColdDrink implements Item {
 	//delegates the method to the next object in the inheritance chain
 	@Override
 	public abstract float price();
+	
+	@Override 
+	public State state(){
+		return new Liquid();
+	}
 
 }

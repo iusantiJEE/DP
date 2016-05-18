@@ -9,7 +9,7 @@ import strings.DelimitedStringBuilder;
 
 public class Meal {
 	private List<Item> _items =  new ArrayList<Item>();
-	private DelimitedStringBuilder _dsb =  new DelimitedStringBuilder("\t");
+	private DelimitedStringBuilder _dsb =  new DelimitedStringBuilder("  ");
 	private float _cost;
 	
 	public void addItem(Item item){
@@ -30,6 +30,7 @@ public class Meal {
 			_dsb.append("Item: " + item.getName());
 			_dsb.append("Packing: " + item.packing().pack());
 			_dsb.append("Price: " + item.price());
+			_dsb.append("State:" + item.state().aggregqtionState());
 			_dsb.append("\n");
 		}
 		

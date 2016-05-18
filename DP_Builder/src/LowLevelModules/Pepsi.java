@@ -1,5 +1,7 @@
 package LowLevelModules;
 
+import HighLevelModules.ColdDrink;
+
 public class Pepsi extends ColdDrink{
 
 	@Override
