@@ -1,5 +1,7 @@
 package dp;
 
+import LowLevelModules.CartofiPrajiti;
+import LowLevelModules.CeafaDePorc;
 import LowLevelModules.CheeseBurger;
 import LowLevelModules.ChikenBurger;
 import LowLevelModules.CocaCola;
@@ -21,6 +23,14 @@ public class MealBuilder {
 		meal.addItem(new CocaCola());
 		meal.addItem(new VeganBurger());
 		meal.addItem(new VeganBurger());
+		return meal;
+	}
+	
+	public Meal prepareCeafaDePorc(){
+		Meal meal  =  new Meal();
+		meal.addItem(new CeafaDePorc());
+		meal.addItem(new CartofiPrajiti());
+		meal.addItem(new Pepsi());
 		return meal;
 	}
 }
