@@ -25,6 +25,7 @@ public class Meal {
 	
 	public Meal showItems(){
 		_dsb.reset();
+		_dsb.append("");
 		for(Item item : _items){
 			_dsb.append("Item: " + item.getName());
 			_dsb.append("Packing: " + item.packing().pack());
