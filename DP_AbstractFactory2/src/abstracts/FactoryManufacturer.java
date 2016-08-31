@@ -1,20 +1,20 @@
 package abstracts;
 
-import implementations.MotifFactory;
-import implementations.PmFactory;
+import implementations.OSXFactory;
+import implementations.WINFactory;
 
 public  class FactoryManufacturer {
-	private enum FactoryType{
-		Pm_FACTORY, Motif_FACTORY;
+	public static enum FactoryType{
+		WIN_FACTORY, OSX_FACTORY;
 		
 	}
 	
 	public WidgetFactory getWidgetFactory(FactoryType factoryType){
 		switch(factoryType){
-		case Pm_FACTORY:
-			return new PmFactory();
-		case Motif_FACTORY:
-			return new MotifFactory();
+		case WIN_FACTORY:
+			return new WINFactory();
+		case OSX_FACTORY:
+			return new OSXFactory();
 		default:
 			return null;
 		}

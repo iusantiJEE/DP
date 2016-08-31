@@ -1,20 +1,20 @@
 package implementations;
 
 
+import abstracts.MyScrollBar;
+import abstracts.MyWindow;
 import abstracts.WidgetFactory;
 
-public class MotifFactory extends WidgetFactory {
+public class OSXFactory extends WidgetFactory {
 
 	@Override
 	public MyScrollBar createScrollBar() {
-		// TODO Auto-generated method stub
-		return null;
+		return new OSXScrollBar();
 	}
 
 	@Override
 	public MyWindow createWindow() {
-		// TODO Auto-generated method stub
-		return null;
+		return new OSXWindow();
 	}
 
 }
